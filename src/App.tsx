@@ -13,14 +13,14 @@ import TopBar from './components/Layout/TopBar';
 
 function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex h-screen overflow-hidden" style={{ background: '#070b0f' }}>
+    <div className="flex h-screen overflow-hidden" style={{ background: 'var(--bg-base)' }}>
       <div className="scanline" />
       <div className="grid-line hidden xl:block" style={{ left: '25%' }} />
       <div className="grid-line hidden xl:block" style={{ left: '75%' }} />
       <Sidebar />
       <div className="flex-1 flex flex-col overflow-hidden">
         <TopBar />
-        <main className="flex-1 overflow-y-auto" style={{ background: '#070b0f' }}>
+        <main className="flex-1 overflow-y-auto" style={{ background: 'var(--bg-base)' }}>
           {children}
         </main>
       </div>
